@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbrellaDementiaCafe", "UmbrellaDementiaCafe\UmbrellaDementiaCafe.csproj", "{027A4FAB-9727-41E7-82D9-ED52AC6AEF94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbrellaDementiaCafe.Tests", "UmbrellaDementiaCafe.Tests\UmbrellaDementiaCafe.Tests.csproj", "{0119BF38-9E9E-46D6-A3F8-D980508C09FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027A4FAB-9727-41E7-82D9-ED52AC6AEF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027A4FAB-9727-41E7-82D9-ED52AC6AEF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027A4FAB-9727-41E7-82D9-ED52AC6AEF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027A4FAB-9727-41E7-82D9-ED52AC6AEF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0119BF38-9E9E-46D6-A3F8-D980508C09FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0119BF38-9E9E-46D6-A3F8-D980508C09FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0119BF38-9E9E-46D6-A3F8-D980508C09FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0119BF38-9E9E-46D6-A3F8-D980508C09FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
