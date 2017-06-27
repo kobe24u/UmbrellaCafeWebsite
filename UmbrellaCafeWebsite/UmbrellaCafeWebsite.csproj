@@ -64,6 +64,7 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Content\css\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -81,6 +82,8 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\UmbrellaStyles.css" />
+    <Content Include="Content\css\UmbrellaStyles.css" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
