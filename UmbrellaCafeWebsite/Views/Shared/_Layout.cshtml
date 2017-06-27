@@ -1,14 +1,41 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
-		<link rel="stylesheets" type="text/css" href="~/Content/css/UmbrellaStyles.css">
+    <title>@ViewBag.Title | Umbrella Dementia Cafes</title>
+		
+		
+        @Styles.Render("~/Content/css/UmbrellaStyles.css")
+		@Styles.Render("~/Content/bootstrap.css")
 
 </head>
-<body>
-		<div style="titlebar">
-            <h3 style="titletext">This is the title bar</h3>
-        </div>
+<body>      
+		<div class = "container-fluid" > 
+		<div class="navbar-collapse collapse fyc">
+                    <ul class="nav navbar-nav">
+					<li><img style="height:50px" src="@Url.Content("~/Content/images/umbrellalogo.png")"  /></li>
+                        <li>@Html.ActionLink("About", "Index", "Home")</li>
+					<li>@Html.ActionLink("Cafes", "Index", "Home")</li>
+					<li>@Html.ActionLink("Events", "Index", "Home")</li>
+					<li>@Html.ActionLink("Forum", "Index", "Home")</li>
+					<li>@Html.ActionLink("Shop", "Index", "Home")</li>
+					<li>@Html.ActionLink("Contact us", "Index", "Home")</li>
+					<li>@Html.ActionLink("Donate", "Index", "Home")</li>
+					<li>@Html.ActionLink("Login", "Index", "Home")</li>
+					<li><input type="text" name="searchbox" class="search" placeholder = "Search Here"></li>
+					
+					
+					
+
+                    </ul>
+                </div>
+			</div>
+		
 	@RenderBody()
+
+		 <footer class="footer">
+                <p>Address: One. Community, 184 Surrey Rd, Blackburn.</p>
+            </footer>
+		
+    
 </body>
 </html>
