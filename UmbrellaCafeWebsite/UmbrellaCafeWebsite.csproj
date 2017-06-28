@@ -91,6 +91,7 @@
     <Folder Include="Content\css\" />
     <Folder Include="Content\images\" />
     <Folder Include="Views\Cafes\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -136,6 +137,11 @@
     <Content Include="Views\Events\Index.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
     <Content Include="Views\Donation\Index.cshtml" />
+    <Content Include="Views\Shared\slides.cshtml" />
+    <Content Include="Images\pic1.jpg" />
+    <Content Include="Images\pic4.jpg" />
+    <Content Include="Images\pic2.jpg" />
+    <Content Include="Images\pic3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
