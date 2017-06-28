@@ -7,10 +7,32 @@
 			Image gallery goes here.
 		</div>
         <div>
-            <div class="quarterdivs">The Cafes</div>
-			<div class="quarterdivs">Events</div>
-			<div class="quarterdivs">Shop</div>
-			<div class="quarterdivs">Donate</div>
+            <div class="quarterdivs">
+				<a href="@Url.Action("Index", "Cafes")">
+                     <img src="~/Content/images/UmbrellaCafes.jpg"/>
+				    <label>Cafes</label>
+				</a>
+			</div>
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Events")">
+			        <img src="~/Content/images/UmbrellaEvents.jpg"/>
+				    <label>Events</label>
+				</a>
+			</div>
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Shop")">
+			        <img src="~/Content/images/UmbrellaShop.jpeg"/>
+				    <label>Shop</label>
+				</a>
+			</div>
+
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Donation")">
+			        <img src="~/Content/images/UmbrellaDonate.jpg"/>
+				    <label>Donate</label>
+				</a>
+			</div>
+
         </div>
 	</body>
 </html>

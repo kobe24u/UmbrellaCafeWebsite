@@ -13,9 +13,12 @@
 			<div style="float: left; width: 80%">
 				 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+						<!--<li><a href="@Url.Action("Index", "YourController", null)">
+     <img src="yourImageSource"  style="vertical-align: middle; width: 30px;"> List View
+<a/></li>-->
                         <li><img style="height:50px" src="@Url.Content("~/Content/images/umbrellalogo.png")"  /></li>
 						<li>@Html.ActionLink("About", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Cafes", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Cafes", "Index", "Cafes")</li>
                         <li>@Html.ActionLink("Events", "Index", "Home")</li>
                         <li>@Html.ActionLink("Forum", "Index", "Home")</li>
                         <li>@Html.ActionLink("Shop", "Index", "Home")</li>
