@@ -1,7 +1,6 @@
 ﻿<html>
     <head>
 		<title>@ViewData["Title"]</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -10,15 +9,18 @@
       width: 100%;
 	  Height: 600px;		
       margin: auto;
+			padding-top: 0;
   }
+
+			
   </style>
 	</head>
     <body>
-		<div style="margin: 0; padding: 0; ">
+		<div style="margin: 0; padding-top: 0;">
 
 			@Html.Partial("~/Views/Shared/slides.cshtml")
 		</div>
-        <div>
+        <div >
             <div class="quarterdivs">
 				<a href="@Url.Action("Index", "Cafes")">
                      <img src="~/Content/images/UmbrellaCafes.jpg"/>
