@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
     <title>@ViewBag.Title | Umbrella Dementia Cafes</title>
@@ -13,14 +13,14 @@
 			<div style="float: left; width: 80%">
 				 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><img style="height:50px" src="@Url.Content("~/Content/images/umbrellalogo.png")"  /></li>
-						<li>@Html.ActionLink("About", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Cafes", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Events", "Index", "Home")</li>
+                        <li><a style="margin: 0; padding: 0" href="@Url.Action("Index", "Home")"><img style="margin: 0; height:50px" src="@Url.Content("~/Content/images/umbrellalogo.png")"  /></a></li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Cafes", "Index", "Cafes")</li>
+                        <li>@Html.ActionLink("Events", "Index", "Events")</li>
                         <li>@Html.ActionLink("Forum", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Shop", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Shop", "Index", "Shop")</li>
                         <li>@Html.ActionLink("Contact us", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Donate", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Donate", "Index", "Donation")</li>
 <!--                        <li>@Html.ActionLink("Login", "Index", "Home")</li>-->
 <!--                        <li><input type="text" name="searchbox" class="search" placeholder = "Search Here"></li>               -->
                     </ul>
@@ -63,18 +63,27 @@
                         <div class="quicklinks">
                             <label style="margin-left:37px">Quick Links</label>
                             <ul>
-                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Shops</a></li>
+                                <li>@Html.ActionLink("Shop", "Index", "Shop",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("Donate", "Index", "Donation",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("Team", "About", "Home",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("News", "Index", "Home",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("Contact us", "About", "Home",null, new {@style="color: gray"})</li>
+							    <!--<a href="~/Views/Home/Index.cshtml" style="color:gray">Shops</a></li>
                                 <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Donate</a></li>
                                 <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Team</a></li>
                                 <li><a href="~/Views/Home/Index.cshtml" style="color:gray">News</a></li>
-                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Contact us</a></li>
+                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Contact us</a></li>-->
                             </ul>
                             <label style="margin-left:37px">About Us</label>
                             <ul>
-                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Volunteer</a></li>
+							    <li>@Html.ActionLink("Volunteer", "Index", "Home",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("Get involved", "Index", "Home",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("Find a cafe", "Index", "Home",null, new {@style="color: gray"})</li>
+							    <li>@Html.ActionLink("FAQ", "Index", "Home",null, new {@style="color: gray"})</li>
+                                <!--<li><a href="~/Views/Home/Index.cshtml" style="color:gray">Volunteer</a></li>
                                 <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Get involved</a></li>
                                 <li><a href="~/Views/Home/Index.cshtml" style="color:gray">Find a cafe</a></li>
-                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">FAQ</a></li>
+                                <li><a href="~/Views/Home/Index.cshtml" style="color:gray">FAQ</a></li>-->
                             </ul>
                         </div>
                 </footer>

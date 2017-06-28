@@ -142,6 +142,7 @@
     <Content Include="Images\pic4.jpg" />
     <Content Include="Images\pic2.jpg" />
     <Content Include="Images\pic3.jpg" />
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
