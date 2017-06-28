@@ -85,7 +85,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Content\css\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Views\Cafes\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -93,28 +99,22 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CafesController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\ShopController.cs" />
+    <Compile Include="Controllers\DonationController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\bgp2.png" />
-    <Content Include="Content\images\facebook.png" />
-    <Content Include="Content\images\instagram.png" />
-    <Content Include="Content\images\linkedin.png" />
-    <Content Include="Content\images\pinterest.png" />
-    <Content Include="Content\images\twitter.png" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="C:\Users\micha\Desktop\_Layout.cshtml">
-      <Link>Views\Shared\_Layout.cshtml</Link>
-    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Scripts\UmbrellaStyles.css" />
-    <Content Include="C:\Users\micha\Desktop\UmbrellaStyles.css">
-      <Link>Content\css\UmbrellaStyles.css</Link>
-    </Content>
+    <Content Include="Content\css\UmbrellaStyles.css" />
     <Content Include="Content\images\umbrellalogo.png" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -130,6 +130,18 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\images\umbrellasearch.png" />
+    <Content Include="Content\images\UmbrellaEvents.JPG" />
+    <Content Include="Content\images\UmbrellaCafes.JPG" />
+    <Content Include="Content\images\UmbrellaDonate.jpg" />
+    <Content Include="Views\Cafes\Index.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
+    <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Donation\Index.cshtml" />
+    <Content Include="Views\Shared\slides.cshtml" />
+    <Content Include="Images\pic1.jpg" />
+    <Content Include="Images\pic4.jpg" />
+    <Content Include="Images\pic2.jpg" />
+    <Content Include="Images\pic3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
@@ -138,6 +150,7 @@
     <None Include="Content\bootstrap.css.map" />
     <None Include="Content\bootstrap-theme.min.css.map" />
     <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\images\UmbrellaShop.jpeg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

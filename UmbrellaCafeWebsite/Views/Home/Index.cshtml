@@ -1,16 +1,52 @@
 ﻿<html>
     <head>
 		<title>@ViewData["Title"]</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+	  Height: 600px;		
+      margin: auto;
+			padding-top: 0;
+  }
+
+			
+  </style>
 	</head>
     <body>
-		<div style="background-color: gray; height: 100px;">
-			Image gallery goes here.
+		<div style="margin: 0; padding-top: 0;">
+
+			@Html.Partial("~/Views/Shared/slides.cshtml")
 		</div>
-        <div>
-            <div class="quarterdivs">The Cafes</div>
-			<div class="quarterdivs">Events</div>
-			<div class="quarterdivs">Shop</div>
-			<div class="quarterdivs">Donate</div>
+        <div >
+            <div class="quarterdivs">
+				<a href="@Url.Action("Index", "Cafes")">
+                     <img src="~/Content/images/UmbrellaCafes.jpg"/>
+				    <label>Cafes</label>
+				</a>
+			</div>
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Events")">
+			        <img src="~/Content/images/UmbrellaEvents.jpg"/>
+				    <label>Events</label>
+				</a>
+			</div>
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Shop")">
+			        <img src="~/Content/images/UmbrellaShop.jpeg"/>
+				    <label>Shop</label>
+				</a>
+			</div>
+
+			<div class="quarterdivs">
+				<a href="@Url.Action("Index", "Donation")">
+			        <img src="~/Content/images/UmbrellaDonate.jpg"/>
+				    <label>Donate</label>
+				</a>
+			</div>
+
         </div>
 	</body>
 </html>
