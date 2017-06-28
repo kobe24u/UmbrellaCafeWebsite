@@ -1,0 +1,44 @@
+﻿body {
+    
+}
+
+.umbrellafont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.titlebar {
+    height: 50px;
+    width: inherit;
+    background-color: #ed6223;
+     font-size:larger;
+}
+
+.titletext {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.footer {
+    color: gray;
+    font-size: 5px;
+}
+
+.login {
+    padding-left: 200px;
+
+}
+
+.search {
+    width: 300px;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    border: 1px solid blue;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+
