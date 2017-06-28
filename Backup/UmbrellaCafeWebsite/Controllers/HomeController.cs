@@ -15,7 +15,6 @@ namespace UmbrellaCafeWebsite.Controllers
             var isMono = Type.GetType("Mono.Runtime") != null;
 
             ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Title"] = "Home";
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
             return View();
