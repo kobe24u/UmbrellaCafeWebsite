@@ -20,14 +20,42 @@
     font-size: 14px;
 }
 
-.footer {
+div.social {
+    padding: 10px;
     color: gray;
-    font-size: 5px;
+    width: 100%;
+    height: 60px;
+    background-color: #4675f7;
+    background-image: url(../images/bgp2.png);
+    margin-top: 250px;
+
+}
+
+a.social {
+    margin-right: 15px;
+}
+
+footer {
+    width:80%;
+}
+
+div.quicklinks {
+    padding: 20px;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    color: gray;
+    text-align: left;
+    border-bottom:outset;
+    border-bottom-width: thin;
+}
+
+ul, li {
+    list-style: none;
+    text-align:left;
 }
 
 .login {
     padding-left: 200px;
-
 }
 
 .search {
