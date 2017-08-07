@@ -27,6 +27,10 @@ namespace UmbrellaCafeWebsite.Controllers
 			return View();
 		}
 
+        public String HelloWorld(String name)
+        {
+            return name;
+        }
     }
 }
 

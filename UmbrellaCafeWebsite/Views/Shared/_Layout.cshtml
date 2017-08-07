@@ -3,7 +3,6 @@
 <head>
     <title>@ViewBag.Title | Umbrella Dementia Cafes</title>
 		
-		
         @Styles.Render("~/Content/css/UmbrellaStyles.css")
 		@Styles.Render("~/Content/bootstrap.css")
 
@@ -19,7 +18,7 @@
                         <li>@Html.ActionLink("Events", "Index", "Events")</li>
                         <li>@Html.ActionLink("Forum", "Index", "Home")</li>
                         <li>@Html.ActionLink("Shop", "Index", "Shop")</li>
-                        <li>@Html.ActionLink("Contact us", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Contact us", "Index", "Contacts")</li>
                         <li>@Html.ActionLink("Donate", "Index", "Donation")</li>
 <!--                        <li>@Html.ActionLink("Login", "Index", "Home")</li>-->
 <!--                        <li><input type="text" name="searchbox" class="search" placeholder = "Search Here"></li>               -->
@@ -29,13 +28,15 @@
 			<div style="float: right; width: 20%; align: right">
 				<div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-						<li>@Html.ActionLink("Login", "Index", "Home")</li>
+						<li>@Html.ActionLink("Login", "Index", "Login")</li>
 						<li style="padding: 12px"><img height="25px" src="@Url.Content("~/Content/images/umbrellasearch.png")" /></li>  
 				    </ul>
 				</div>
 			</div>
 		   
 	        @RenderBody()
+			@RenderSection("Scripts", required: false)
+			@RenderSection("Styles", required: false)
 
 			<br/>
             <div id="social" class="social">

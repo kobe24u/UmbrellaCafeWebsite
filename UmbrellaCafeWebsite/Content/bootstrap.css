@@ -82,17 +82,273 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-.aboutpicture-label {
+    .aboutdiv label {
+        font-family: Georgia, serif;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: normal;
+        width: 100%;
+        margin-bottom: 15px;
+        /*margin: 0.25em 0;*/
+        /*padding: 0.25em 10px;*/
+        line-height: 1.45;
+        position: relative;
+        color: #383838;
+    }
+
+    .aboutdiv blockquote {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-style: italic;
+        width: 100%;
+        margin: 0.25em 0;
+        padding: 0.25em 40px;
+        line-height: 1.45;
+        position: relative;
+        color: #383838;
+    }
+
+        .aboutdiv blockquote:before {
+            display: block;
+            content: "\201C";
+            font-size: 80px;
+            position: absolute;
+            left: -5px;
+            top: -20px;
+            color: #7a7a7a;
+        }
+
+        .aboutdiv blockquote:after {
+            display: block;
+            content: "\201D";
+            font-size: 80px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            color: #7a7a7a;
+        }
+
+
+    .aboutdiv heading {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #ed6223;
-    /*    position: absolute;
+    font-weight: bold;
+    /* position: absolute;
     top: 10%;
     left: 0;
     padding-left: 3px;
     padding-right: 3px;*/
+    }
+
+    .aboutdiv subheading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #ed6223;
+    }
+
+    .aboutdiv .aboutusbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/UmbrellaLaptop.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+.aboutdiv .bg {
+    margin:0;
+    padding: 0;
+    background-image: url("images/UmbrellaKirstyOrange.jpg");
+    min-height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+    .aboutdiv .umbrellabg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/BlackburnCafe.jpg");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .eventsbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Events.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .shopbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Shops.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .contactbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/ContactUs.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .donatebg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Donations.jpg");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .volunteerbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Volunteers.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .childrenbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Children.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .musicbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/Music.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutdiv .profedubg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/ProfessionalEducation.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .aboutdiv .comminfobg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/CommunityInformation.jpg");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .aboutdiv .infonightsbg {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/InformationNights.JPG");
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.aboutdiv img{
+    height:300px;
+    width: 40%;
+}
+
+    .aboutdiv .imglabel {
+        font-family: Georgia, serif;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: normal;
+        width: 100%;
+        margin-bottom: 15px;
+        /*margin: 0.25em 0;*/
+        /*padding: 0.25em 10px;*/
+        line-height: 1.45;
+        position: relative;
+        color: #383838;
+    }
+
+
+/* For image gallery */
+.hide-bullets {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.col-sm-3 a {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 3s ease;
+}
+
+    .col-sm-3 a:hover {
+        border: 1px solid #ff4647;
+        border-radius: 100% 60% / 30% 10%;
+        background: linear-gradient(rgba(56,123,131,0.7),rgba(56,123,131,0.7));
+    }
 
 /*-------------------------------------------------------------------------------------------------------*/
 

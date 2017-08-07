@@ -12,5 +12,35 @@ namespace UmbrellaCafeWebsite.Controllers
         {
             return View ();
         }
+
+		public ActionResult Volunteers()
+		{
+			return View();
+		}
+
+		public ActionResult Children()
+		{
+			return View();
+		}
+
+		public ActionResult Music()
+		{
+			return View();
+		}
+
+		public ActionResult ProfessionalEducation()
+		{
+			return View();
+		}
+
+		public ActionResult CommunityInformation()
+		{
+			return View();
+		}
+
+		public ActionResult InformationNights()
+		{
+			return View();
+		}
     }
 }

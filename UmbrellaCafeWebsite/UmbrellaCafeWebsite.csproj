@@ -103,6 +103,8 @@
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\DonationController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -143,6 +145,33 @@
     <Content Include="Images\pic2.jpg" />
     <Content Include="Images\pic3.jpg" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Content\images\UmbrellaStudents.JPG" />
+    <Content Include="Content\images\UmbrellaLaptop.JPG" />
+    <Content Include="Content\images\UmbrellaKirstyOrange.JPG" />
+    <Content Include="Content\images\UmbrellaTrevorRita.jpg" />
+    <Content Include="Content\images\UmbrellaHandprints.png" />
+    <Content Include="Scripts\imageGallery.js" />
+    <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\paymentJS.js" />
+    <Content Include="Content\images\InformationNights.JPG" />
+    <Content Include="Content\images\CommunityInformation.jpg" />
+    <Content Include="Content\images\ProfessionalEducation.JPG" />
+    <Content Include="Content\images\Volunteers.JPG" />
+    <Content Include="Content\images\BlackburnCafe.jpg" />
+    <Content Include="Content\images\Children.JPG" />
+    <Content Include="Content\images\Music.JPG" />
+    <Content Include="Views\Events\Volunteers.cshtml" />
+    <Content Include="Views\Events\Children.cshtml" />
+    <Content Include="Views\Events\Music.cshtml" />
+    <Content Include="Views\Events\ProfessionalEducation.cshtml" />
+    <Content Include="Views\Events\CommunityInformation.cshtml" />
+    <Content Include="Views\Events\InformationNights.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Content\images\Events.JPG" />
+    <Content Include="Content\images\Shops.JPG" />
+    <Content Include="Content\images\ContactUs.JPG" />
+    <Content Include="Content\images\Donations.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />

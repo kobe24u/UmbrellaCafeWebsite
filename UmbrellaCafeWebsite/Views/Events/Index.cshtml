@@ -3,5 +3,216 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>This is the Events page</h2>
+@section Styles {
+<style>
+	/* Icon set - http://ionicons.com */
 
+figure.snip1237 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 20px 20px; 1%;
+  min-width: 250px;
+  max-width: 320px;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: left;
+ 
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+figure.snip1237 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+figure.snip1237 .image {
+    height: 250px; 
+    overflow: hidden;
+    position: relative; 
+}
+
+
+figure.snip1237 h3 {
+	padding-top: 10px;
+  margin: 0 0 3px;
+	font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+  font-size:22px;
+}
+figure.snip1237 p {
+  margin: 0;
+}
+
+/* ----------------------------------------------------WHITESPACE START */
+
+figure.snip1237 figcaption {
+  /* padding order: top right bottom left */
+  padding: 5px 20px 15px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  font-size: 0.9em;
+}
+
+figure.snip1237 figcaption p {
+  margin-bottom: 15px;
+}
+
+figure.snip1237 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+
+
+/* ----------------------------------------------------WHITESPACE END */
+
+
+/* ----------------------------------------------------READ MORE START */
+
+figure.snip1237 .read-more {
+  display: inline-block;
+	height: 40px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ed6223;
+  padding: 0.4em 0.6em;
+  color: #ffffff;
+  text-decoration: none;
+	font-align: center;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #ed6223;
+}
+
+figure.snip1237 .read-more:hover {
+	border-color: #fbad18;
+  background-color: #fbad18;
+  color: #ffffff;
+}
+/* ----------------------------------------------------READ MORE END */
+
+
+
+/* ----------------------------------------------------HOVER START */
+
+figure.snip1237:hover:before,
+figure.snip1237.hover:before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: skew(-45deg) translateX(-50%);
+  transform: skew(-45deg) translateX(-50%);
+}
+figure.snip1237:hover:after,
+figure.snip1237.hover:after {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: skew(-45deg) translateX(-75%);
+  transform: skew(-45deg) translateX(-75%);
+}
+
+/* ----------------------------------------------------HOVER END */
+
+
+/* Image Resizer */
+figure.snip1237:hover img,
+figure.snip1237.hover img {
+  -webkit-transform: scale(25);
+  transform: scale(1.25);
+}
+
+</style>
+}
+
+<div class="aboutdiv">
+        <div class= "eventsbg"></div>
+    <br/>
+	<heading>Events</heading>
+	<br/>
+    <label>
+        Our café group is made up of couples and individuals living in the community who have been diagnosed with a dementia disease, such as the more common Alzheimer's, Parkinson's, Lewy Bodies and Vascular Dementia. 
+	</label>
+	<br/>
+	<label>
+        As safety is a priority for us, we require those who have mid-onset to late dementia, and still living in the community, to bring their support person.  The support person must stay for the whole café, taking full responsibility of the person they are care-partnered with.  
+    </label>
+    <br/>
+    <label>
+        We also welcome people who have previously been on this caregivers journey and need extra support or feel a sense of belonging, especially if your partner has gone into residential care.
+    </label>
+    <br/>
+</div>
+
+<div class="container">
+	<center>
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ --> 
+<figure class="snip1237">
+
+
+<div class="image" id="truck"> <img src="~/Content/images/Volunteers.JPG" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Volunteers</h3><br> 
+@Html.ActionLink("Read More", "Volunteers", "Events",null, new {@class="read-more"})</figcaption> </figure> 
+
+
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ -->
+<figure class="snip1237">
+<div class="image" id="yardsale"> <img src="~/Content/images/Children.JPG" alt="Yard Sale" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Children</h3><br> 
+@Html.ActionLink("Read More", "Children", "Events",null, new {@class="read-more"})</figcaption> </figure> 
+
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ --> 
+<figure class="snip1237">
+<div class="image" id="shredding"> <img src="~/Content/images/Music.JPG" alt="Shredding Day" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Music</h3><br> 
+@Html.ActionLink("Read More", "Music", "Events",null, new {@class="read-more"})</figcaption> </figure>
+
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ --> 
+<figure class="snip1237">
+<div class="image" id="haunt"> <img src="~/Content/images/ProfessionalEducation.JPG" alt="Haunted Barn" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Professional Education</h3><br> 
+@Html.ActionLink("Read More", "ProfessionalEducation", "Events",null, new {@class="read-more"})</figcaption> </figure>
+
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ --> <figure class="snip1237">
+<div class="image" id="teenie"> <img src="~/Content/images/CommunityInformation.JPG" alt="Teenie Halloweenie" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Community Information</h3><br> 
+@Html.ActionLink("Read More", "CommunityInformation", "Events",null, new {@class="read-more"})</figcaption> </figure> 
+
+<!-- -------------------------------------------------------------------------------------------START NEW MONTH------------------------------------------------------------------------------------------ --> <figure class="snip1237">
+<div class="image" id="gingerbread"> <img src="~/Content/images/InformationNights.JPG" alt="Gingerbread" height="100%" width="100%"><em></em>
+ </div>
+<figcaption>
+<h3 style="text-align:center;">Information Nights</h3><br>
+@Html.ActionLink("Read More", "InformationNights", "Events",null, new {@class="read-more"})</figcaption> </figure> 
+
+
+		</center>
+</div>

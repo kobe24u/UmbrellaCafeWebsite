@@ -3,5 +3,243 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>This is the Shop page</h2>
+@section Scripts {
+    <script type="text/javascript" src="@Url.Content("/Scripts/jquery.js")">
+    </script>
+}
 
+@section Styles {
+    <style>
+
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+</style>
+}
+
+<body>
+	<div class="aboutdiv">
+        <div class= "shopbg"></div>
+        <br/>
+        <heading>Our Shop</heading>
+        <br/>
+        <label>
+            In partnership with <a href="http://theageofsenescence.com">The Age Of Senescence.com</a>, Umbrella Dementia Cafés will sell the award winning children's book by Kathryn Harrison at every café event.  
+        </label>
+        <br/>
+        <label>
+            We are please to announce that 100% of the profits from the sale of this book will be donated to Umbrella Dementia Cafés to help purchase more equipment and resources for everyone who attends. 
+        </label>
+		<label>
+            You can purchase these books online following the links below. Umbrella Dementia Cafés will distribute in Australia only.  Free postage.  
+        </label>
+		<label>
+            Thank you for making a difference.
+        </label>
+	</div> 
+<div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Umbrella Shop</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Books</a>
+                    <a href="#" class="list-group-item">Tickets</a>
+                    <a href="#" class="list-group-item">Miscellaneous</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-lg-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$36.00</h4>
+                                <h4><a href="#">Weeds in Nana's Garden (Hardback)</a>
+                                </h4>
+                                <p>A young girl and her Nana hold a special bond that blooms in the surroundings of Nana's magical garden.
+
+Then one day, the girl finds many weeds in the garden. She soon discovers that her beloved Nana has Alzheimer's Disease; an illness that affects an adult brain with tangles that get in the way of thoughts, kind of like how weeds get in the way of flowers. As time passes, the weeds grow thicker and her Nana declines, but the girl accepts the difficult changes with love, and learns to take-over as the magical garden's caregiver.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6 col-md-6">
+                        <div class="thumbnail">
+                            <img src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$28.00</h4>
+                                <h4><a href="#">Weeds in Nana's Garden (Paperback)</a>
+                                </h4>
+                                <p>A young girl and her Nana hold a special bond that blooms in the surroundings of Nana's magical garden.
+
+Then one day, the girl finds many weeds in the garden. She soon discovers that her beloved Nana has Alzheimer's Disease; an illness that affects an adult brain with tangles that get in the way of thoughts, kind of like how weeds get in the way of flowers. As time passes, the weeds grow thicker and her Nana declines, but the girl accepts the difficult changes with love, and learns to take-over as the magical garden's caregiver.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Third Product</a>
+                                </h4>
+                                <br/>
+                                <h4 class="pull-right">$29.99</h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Fourth Product</a>
+                                </h4>
+                                <br/>
+                                <h4 class="pull-right">$24.99</h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="~/Content/images/UmbrellaShop.jpeg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Fifth Product</a>
+                                </h4>
+                                <br/>
+                                <h4 class="pull-right">$14.99</h4>
+                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+</body>
